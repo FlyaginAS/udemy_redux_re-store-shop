@@ -24,6 +24,14 @@ const fetchBooks= (bookstoreService, dispatch)=>()=>{
         .catch((err)=>dispatch(booksError(err)));
 };
 
+const bookAddedToCart=(bookId)=>{
+    return {
+        type: 'BOOK_ADDED_TO_CART',
+        payload: bookId,
+    }
+};
+
 export {
     fetchBooks,
+    bookAddedToCart,
 };
