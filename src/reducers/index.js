@@ -3,7 +3,7 @@ const initialState={
     loading: true,
     error: null,
     cartItems: [],
-    orderTotal: 220,
+    orderTotal: 0,
 };
 
 const updateCartItems=(cartItems, item, idx)=>{
